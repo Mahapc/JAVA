@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class simpleif {
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter the x value:");
+        int x = input.nextInt();
+        System.out.println("enter the y value:");
+        int y = input.nextInt();
+        if(x+y>20){
+            System.out.println("x+y is greater than 20");
+        }
+    }
+}
