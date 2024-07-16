@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class model6
+{
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        System.out.print("1 for string and 2 for numbers");
+        int n = input.nextInt();
+        if(n == 1){
+            String a = input.next();
+            String e = " ";
+            int len = a.length();
+            for(int i = len - 1; i >=0; i-- ){
+                e = e + a.charAt(i);
+            }
+            if(a.equals(e))
+                System.out.print("s");
+        }
+        else if(n == 2){
+            int a = input.nextInt();
+            int res = 0 ;
+            int temp = a;
+            while(a != 0){
+                int rem = a % 10;
+                res = res *10 +rem;
+                a = a /10;
+            }
+            if(temp == res)
+                System.out.print(res);
+        }
+        else
+            System.out.print("enter a valid choise ");
+    }
+}
