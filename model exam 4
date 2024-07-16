@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class model4 {
+    public static void main(String args[]){
+        Scanner input = new Scanner(System.in);
+        int a = 0, b = 1, c ;
+        int sum = 0 ;
+        int count = 2 , n = input.nextInt();
+
+        while (count <= n ){
+            c = a + b;
+            if (c%2==0){
+                sum += c;
+            }
+            count += 1;
+            if(count >n){
+                break;
+            }
+            a = b;
+            b = c;
+
+        }
+        System.out.print(sum);
+    }
+}
